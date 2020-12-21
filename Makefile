@@ -4,11 +4,13 @@
 
 sync: ## Sync files
 	[ -f ~/.gitconfig ] || ln -s $(PWD)/src/.gitconfig ~/.gitconfig
+	[ -f ~/.gitignore_global ] || ln -s $(PWD)/src/.gitignore_global ~/.gitignore_global
 	[ -f ~/.vimrc ] || ln -s $(PWD)/src/.vimrc ~/.vimrc
 	[ -f ~/.zshrc ] || ln -s $(PWD)/src/.zshrc ~/.zshrc
 
 clean: ## Delete files
 	rm -f ~/.gitconfig
+	rm -f ~/.gitignore_global
 	rm -f ~/.vimrc
 	rm -f ~/.zshrc
 

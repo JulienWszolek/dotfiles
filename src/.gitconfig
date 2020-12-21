@@ -3,3 +3,5 @@
 	email = wszolek.julien@gmail.com
 [core]
 	editor = vim
+    excludesfile = ~/.gitignore_global
+
